@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#root',
     data: {
+        generated: false,
         list: []
     },
     methods: {},
@@ -11,6 +12,9 @@ var app = new Vue({
                 .get('https://flynn.boolean.careers/exercises/api/random/mail')
                 .then((got) => {
                     this.list.push(got.data.response);
+                    if (i == 9) {
+                        this.generated = true;
+                    };
             });
         };
         console.log(this.list);

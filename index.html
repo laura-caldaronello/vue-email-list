@@ -11,7 +11,7 @@
 <body>
     
     <div id="root">
-        <ul v-if="list.length == 10"> <!-- la parte bonus è soltanto questo v-if -->
+        <ul v-if="generated"> <!-- la prima versione del bonus non aveva la definizione di "generated" ma semplicemente, nel v-if, "list.length == 10" -->
             <li v-for="email in list">{{email}}</li>
         </ul>
     </div>
