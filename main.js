@@ -14,6 +14,7 @@ var app = new Vue({
             });
         };
         console.log(this.list);
+        
     }
 });
 Vue.config.devtools = true;

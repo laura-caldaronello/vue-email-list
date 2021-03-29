@@ -11,7 +11,7 @@
 <body>
     
     <div id="root">
-        <ul>
+        <ul v-if="list.length == 10"> <!-- la parte bonus è soltanto questo v-if -->
             <li v-for="email in list">{{email}}</li>
         </ul>
     </div>
